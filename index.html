@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    
+   </head>
+   <link rel="stylesheet" type="text/css" href="landing.css">
+    <body>
+        <header id="header">
+            
+               
+            <h1>Car World</h1>
+            <img id="header-img" src="https://i.vippng.com/png/small/57-579531_car-logo-design-png-wwwpixsharkcom-images-galleries-rent.png">
+            <center>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#Cars">Cars</a>|
+                <a class="nav-link" href="#Comparison">Comparison</a>|
+                <a class="nav-link" href="#Salers">Price</a>
+            </nav>
+            
+            </center>   
+        </header>
+        
+       
+        
+
+
+          
+        <section id="Cars">
+            <center>
+            <form id="form" method="POST" action="https://www.freecodecamp.com/email-submit">
+                <input type="email" name="email" id="email" required placeholder="email"></input><br>
+                
+                <input type="submit" id="submit">
+        
+                </form>
+            </center>
+            
+          <center>
+         <h1>Volkswagen is a  multinational automotive from Germany</h1>
+         <h1>Toyota is a  multinational automotive from Japan.</h1>
+         <h1>Mazda is a a  multinational automotive from Japan</h1>
+          </center>
+        </section>
+    
+        <section id="Comparison">
+            <center>
+                <h1> Car Comparison</h1>
+             <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/6e_EE1DzDwM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+            
+        </section>
+
+        <section id="Salers">
+            <div class="flex-container">
+                <div>From Company</div>
+                <div>From Dealer</div>
+                <div>From Person</div>
+              </div>
+        </section>
+
+        
+        <script>
+            
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("header");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+                console.log('scroll triggered')
+              if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky")
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+        
+
+        
+
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
+
+
+
